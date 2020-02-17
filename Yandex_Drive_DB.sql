@@ -12,3 +12,18 @@
 - 
 
 */
+
+DROP DATABASE IF EXISTS YandexDrive;
+CREATE DATABASE YandexDrive;
+USE YandexDrive;
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    email VARCHAR(120) UNIQUE,
+    phone BIGINT,
+    INDEX users_phone_idx(phone),
+    INDEX users_firstname_lastname_idx(firstname, lastname)
+);

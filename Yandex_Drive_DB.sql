@@ -17,6 +17,7 @@ DROP DATABASE IF EXISTS YandexDrive;
 CREATE DATABASE YandexDrive;
 USE YandexDrive;
 
+-- Создание таблицы "Пользователи"
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
 	id SERIAL PRIMARY KEY,

@@ -43,8 +43,9 @@ CREATE TABLE profiles (
     gender CHAR(1),
     birthday DATE,
 	photo_id BIGINT UNSIGNED NULL,
-    created_at DATETIME DEFAULT NOW(),
-    driver_license VARCHAR(10),
+    created_at DATE,
+        -- DATETIME DEFAULT NOW(),
+    driver_license BIGINT,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
@@ -123,8 +124,8 @@ CREATE TABLE cars(
     car_models_id BIGINT UNSIGNED NOT NULL,
     `status` ENUM ('free', 'busy', 'service'),
     fuel BIGINT UNSIGNED,
-    location_lat FLOAT( 9, 6 ) NOT NULL,
-    location_lng FLOAT( 9, 6 ) NOT NULL,
+    location_lat FLOAT(12, 10) NOT NULL,
+    location_lng FLOAT(12, 10) NOT NULL,
     
     INDEX (reg_number),
     FOREIGN KEY (car_models_id) REFERENCES car_models(id)
@@ -175,10 +176,10 @@ DROP TABLE IF EXISTS routes;
 CREATE TABLE routes(
     id SERIAL PRIMARY KEY,
     trip_id BIGINT UNSIGNED NOT NULL,
-    start_lat FLOAT( 10, 6 ) NOT NULL,
-    start_lng FLOAT( 10, 6 ) NOT NULL,
-    finish_lat FLOAT( 10, 6 ) NOT NULL,
-    finish_lng FLOAT( 10, 6 ) NOT NULL,
+    start_lat FLOAT(12, 10) NOT NULL,
+    start_lng FLOAT(12, 10) NOT NULL,
+    finish_lat FLOAT(12, 10) NOT NULL,
+    finish_lng FLOAT(12, 10) NOT NULL,
 
     INDEX (trip_id),
     FOREIGN KEY (trip_id) REFERENCES trips(id)

@@ -1,28 +1,11 @@
-/* Данная база данных предназначена для создания структуры хранения и обработки данных, необходимых
-при работе каршеринга Яндекс.Драйв. В базе данных реализованы следующие сущности:
-- Пользователи
-- Профили
-- Автомобили
-- Поездки
-- Тарифы
-- Местоположение автомобилей?
-- Стоимость
-- Категории автомобилей
-- Города
-- 
-*/
+-- 3. скрипты создания структуры БД (с первичными ключами, индексами, внешними ключами)
 
+-- Создание БД
 DROP DATABASE IF EXISTS YandexDrive;
 CREATE DATABASE YandexDrive;
--- CHARSET = 'windows-1251';
--- COLLATE = 'windows-1251';
+SET NAMES 'utf8';
+SET CHARACTER SET utf8;
 USE YandexDrive;
-
-/*set character_set_database = 'cp1251';
-set character_set_server = 'cp1251';
-set character_set_system = 'cp1251';
-SHOW VARIABLES LIKE 'char%';
-*/
 
 -- Создание таблицы "Пользователи"
 DROP TABLE IF EXISTS users;

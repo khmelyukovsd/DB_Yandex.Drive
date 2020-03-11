@@ -138,7 +138,7 @@ CREATE TABLE inspections(
     car_id BIGINT UNSIGNED NOT NULL,
     media_id BIGINT UNSIGNED NOT NULL,
     created_at DATETIME DEFAULT NOW(),
-    discription TEXT,
+    `discription` TEXT,
     
     FOREIGN KEY (car_id) REFERENCES cars(id),
     FOREIGN KEY (media_id) REFERENCES media(id)

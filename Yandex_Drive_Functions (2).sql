@@ -1,3 +1,6 @@
+-- 5. скрипты характерных выборок (включающие группировки, JOIN'ы, вложенные таблицы)
+-- 6. представления (минимум 2)
+-- 7. хранимые процедуры / триггеры
 
 -- Вывести все машины из категории Every_day
 SELECT
@@ -24,9 +27,6 @@ SELECT
 FROM receipts
 WHERE trip_id IN (SELECT id FROM trips WHERE user_id = 10);
 
--- Вывести все ДТП за период __
-
-
 -- Вывести все маршруты авто №4
 SELECT
        trip_id,
@@ -35,10 +35,21 @@ SELECT
        finish_lat,
        finish_lng
 FROM routes
-WHERE trip_id IN (SELECT id FROM trips WHERE car_id = 4)
+WHERE trip_id IN (SELECT id FROM trips WHERE car_id = 4);
 
--- Вывести 10 авто с ДТП > 2
+/*-- Вывести номер авто с ДТП > 2
+SELECT *
+FROM accidents
+WHERE trip_id > 0;
 
+SELECT
+       car_id,
+       COUNT(id) AS Count_of_trips
+FROM trips
+GROUP BY car_id
+ORDER BY Count_of_trips desc
+;
+*/
 
 -- Вывести пользователей моложе 1991 рождения, мужчин
 SELECT
@@ -89,8 +100,6 @@ FROM car_category AS c
 JOIN car_models AS m
 ON c.name = 'every_day_plus';
 SELECT * FROM view_category_model;
-
-
 
 -- Транзакции
 -- перевести машину в статус "занята"

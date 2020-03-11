@@ -3,91 +3,92 @@
   <ID>DATABASE</ID>
   <OriginalElement>0d3176b8-284f-431e-9d24-554168c093e0.SCHEMA:YandexDrive</OriginalElement>
   <nodes>
-    <node x="83.0" y="602.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.accidents</node>
-    <node x="363.0" y="-23.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.profiles</node>
-    <node x="377.5" y="1002.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_models</node>
-    <node x="62.5" y="1379.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media</node>
-    <node x="748.5" y="1134.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariff_types</node>
-    <node x="1043.0" y="1429.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.inspections</node>
-    <node x="428.5" y="1334.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_category</node>
-    <node x="1022.0" y="964.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.cars</node>
-    <node x="651.5" y="577.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.routes</node>
-    <node x="371.5" y="802.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.receipts</node>
-    <node x="108.5" y="1734.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media_types</node>
-    <node x="697.5" y="1322.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariffs</node>
-    <node x="369.0" y="602.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips</node>
-    <node x="388.5" y="269.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.users</node>
+    <node x="1708.5" y="414.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_category</node>
+    <node x="-37.0" y="217.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.profiles</node>
+    <node x="1657.5" y="722.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_models</node>
+    <node x="683.0" y="522.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.accidents</node>
+    <node x="268.5" y="229.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.users</node>
+    <node x="662.5" y="179.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media</node>
+    <node x="-24.0" y="647.0">0d3176b8-284f-431e-9d24-554168c093e0.VIEW:YandexDrive.view_category_model</node>
+    <node x="1388.5" y="614.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariff_types</node>
+    <node x="1043.0" y="229.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.inspections</node>
+    <node x="1022.0" y="684.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.cars</node>
+    <node x="691.5" y="937.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.routes</node>
+    <node x="411.5" y="722.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.receipts</node>
+    <node x="708.5" y="-25.5">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media_types</node>
+    <node x="1337.5" y="402.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariffs</node>
+    <node x="-23.5" y="799.5">0d3176b8-284f-431e-9d24-554168c093e0.VIEW:YandexDrive.view_category_price</node>
+    <node x="689.0" y="722.0">0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips</node>
   </nodes>
   <notes />
   <edges>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.profiles" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.users">
-      <point x="0.0" y="103.0" />
-      <point x="0.0" y="-90.5" />
+      <point x="117.0" y="-0.0" />
+      <point x="-91.5" y="-0.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariffs" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_category">
-      <point x="-142.5" y="-0.0" />
-      <point x="91.5" y="-0.0" />
+      <point x="142.5" y="-0.0" />
+      <point x="-91.5" y="-0.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.users">
       <point x="-137.5" y="-0.0" />
-      <point x="0.0" y="1520.0" />
-      <point x="0.0" y="360.0" />
-      <point x="-91.5" y="-0.0" />
+      <point x="91.5" y="-0.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.inspections" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media">
       <point x="-117.0" y="-0.0" />
       <point x="137.5" y="-0.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.cars" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_models">
-      <point x="-138.0" y="-0.0" />
-      <point x="142.5" y="-0.0" />
-    </edge>
-    <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.routes" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips">
-      <point x="-108.5" y="-0.0" />
-      <point x="111.0" y="-0.0" />
+      <point x="138.0" y="-0.0" />
+      <point x="-142.5" y="-0.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.accidents" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips">
-      <point x="117.0" y="-0.0" />
-      <point x="-111.0" y="-0.0" />
+      <point x="0.0" y="78.0" />
+      <point x="0.0" y="-78.0" />
+    </edge>
+    <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.routes" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips">
+      <point x="0.0" y="-103.0" />
+      <point x="0.0" y="78.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariffs" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.tariff_types">
-      <point x="0.0" y="-78.0" />
-      <point x="0.0" y="65.5" />
+      <point x="0.0" y="78.0" />
+      <point x="0.0" y="-65.5" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.users">
-      <point x="0.0" y="-78.0" />
+      <point x="111.0" y="40.0" />
+      <point x="960.0" y="840.0" />
+      <point x="960.0" y="1200.0" />
+      <point x="360.0" y="1200.0" />
       <point x="0.0" y="90.5" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.inspections" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.cars">
-      <point x="0.0" y="-90.5" />
-      <point x="0.0" y="115.5" />
-    </edge>
-    <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media_types">
-      <point x="0.0" y="140.5" />
-      <point x="0.0" y="-65.5" />
-    </edge>
-    <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.cars">
-      <point x="40.0" y="-78.0" />
-      <point x="520.0" y="520.0" />
-      <point x="1160.0" y="520.0" />
+      <point x="0.0" y="90.5" />
       <point x="0.0" y="-115.5" />
     </edge>
+    <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media_types">
+      <point x="0.0" y="-140.5" />
+      <point x="0.0" y="65.5" />
+    </edge>
+    <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.cars">
+      <point x="111.0" y="-0.0" />
+      <point x="-138.0" y="-0.0" />
+    </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.receipts" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.trips">
-      <point x="0.0" y="-78.0" />
-      <point x="0.0" y="78.0" />
+      <point x="108.5" y="-0.0" />
+      <point x="-111.0" y="-0.0" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_models" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.car_category">
-      <point x="0.0" y="78.0" />
-      <point x="0.0" y="-65.5" />
+      <point x="0.0" y="-78.0" />
+      <point x="0.0" y="65.5" />
     </edge>
     <edge source="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.accidents" target="0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.media">
-      <point x="0.0" y="78.0" />
-      <point x="0.0" y="-140.5" />
+      <point x="0.0" y="-78.0" />
+      <point x="0.0" y="140.5" />
     </edge>
   </edges>
-  <settings layout="Directed Orthogonal" zoom="0.42040816326530617" x="801.9866067204148" y="919.0485436893204" />
+  <settings layout="Directed Orthogonal" zoom="0.41252006420545745" x="953.0" y="587.0" />
   <SelectedNodes>
-    <node>0d3176b8-284f-431e-9d24-554168c093e0.TABLE:YandexDrive.profiles</node>
+    <node>0d3176b8-284f-431e-9d24-554168c093e0.VIEW:YandexDrive.view_category_price</node>
   </SelectedNodes>
   <Categories>
     <Category>Key columns</Category>

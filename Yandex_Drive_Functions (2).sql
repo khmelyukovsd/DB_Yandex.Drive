@@ -83,11 +83,14 @@ ORDER BY cost desc;
 -- Показать все цены на машины из категории holiday
 CREATE OR REPLACE VIEW view_category_price AS
 SELECT
-    t.name AS tariff_types,
-    p.price AS price
-FROM tariff_types AS t
-JOIN tariffs AS p
-ON p.car_category_id = t.id;
+    tt.name AS tariff_types,
+    t.price AS price
+FROM tariffs AS t
+JOIN tariff_types AS tt
+ON tt.id = t.tariff_types_id
+WHERE t.car_category_id = 4
+;
+
 SELECT * FROM view_category_price;
 
 -- Показать все модели машин из категории Every_day_plus
@@ -98,7 +101,9 @@ SELECT
     c.name AS car_category
 FROM car_category AS c
 JOIN car_models AS m
-ON c.name = 'every_day_plus';
+ON c.id = m.car_category_id
+WHERE c.name = 'every_day_plus'
+;
 SELECT * FROM view_category_model;
 
 -- Транзакции

@@ -10,5 +10,6 @@ Primary requirements:
   - Characteristic selections scripts (including groupings, JOINs, nested tables);
   - Performances (minimum 2);
   - Stored procedures / triggers;
+
 The course project is implemented on my view of the structure of the Yandex.Drive car sharing database. 
 A full description of the database is presented in the file YD_Discription.odt
